@@ -1,0 +1,58 @@
+            /*WD MODAL*/
+            #TermsOfUse 
+            {
+	            position:fixed;
+	            font-family: Arial, Helvetica, sans-serif;
+	            top: 0;
+	            right: 0;
+	            bottom: 0;
+	            left: 0;
+	            background: rgba(0,0,0,0.9);
+	            min-height:100vh;
+	            min-width:100vw;
+	            z-index: 99999;
+	            opacity:0;
+	            -webkit-transition: opacity 400ms ease-in;
+	            -moz-transition: opacity 400ms ease-in;
+	            transition: opacity 400ms ease-in;
+	            pointer-events: none;
+				padding-top:20px;
+				padding-right:5px;
+            }
+            
+			#TermsOfUse:target
+			{
+				opacity:1;
+				pointer-events: auto;
+				
+			}
+			
+            #TermsOfUse > div 
+            {
+	            width: 1000px;
+				height:550px;
+	            overflow-y:scroll;
+	            margin:35px auto auto auto;
+	            padding: 10px;
+	            border-radius: 10px;
+	            background: #fff;
+	            background: -moz-linear-gradient(#fff, #999);
+	            background: -webkit-linear-gradient(#fff, #999);
+	            background: -o-linear-gradient(#fff, #999);
+             }
+			  
+			  #TermsOfUse h3{
+				font: normal 45px/normal "Arizonia", Helvetica, sans-serif;
+				color:black;
+				text-align: center;
+			   }
+			#TermsOfUse span
+			   {   font-family: Georgia, serif;
+				   font-style:oblique;
+			   }
+            /*WD MODAL CLOSE*/
+            /*CLOSE BUTTON COMMON FOR ALL THE MODALS*/ 
+                .close{color:#000000;transition:1s;position:relative;right:10px;top:10px;}
+                .close:hover {font-size:large;}
+            /*CLOSE BUTTON CLOSE*/ 
+        
